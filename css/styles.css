@@ -341,6 +341,31 @@ h1, h2, h3, h4, h5, h6, p{
     
       
 }  
+
+.form {
+    width: 600px;
+    outline: 1px solid tomato;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+}
+
+.form-field {
+    outline: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field label {
+    margin-bottom: 5px;
+}
+
+.form-field input {
+    padding: 0;
+    margin: 0;
+}
+
+
 /* секція Specifics */
 
 .specifics {
