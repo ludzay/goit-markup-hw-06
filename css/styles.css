@@ -961,7 +961,7 @@ fill: var(--color-white);
     
 }
 
-.form-field-input::placeholder, .form-field-input:focus, .form-field-input:hover {
+.form-field-input::placeholder, .form-field-input:focus {
     color: rgba(0, 0, 0, 1);
     border: 1px solid #2196F3;
     fill: #188CE8;
@@ -982,6 +982,10 @@ fill: var(--color-white);
 
 }
 
+.form-field-icon::placeholder {
+    fill: var(--accent-color);
+}
+
 .form-field-checkbox {
     padding-top: 20px;
     padding-bottom: 30px;
@@ -989,7 +993,34 @@ fill: var(--color-white);
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
+/* ховаємо чекбокс */
+ .checkbox-input {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 
+}
+
+.checkbox {
+    position: absolute;
+    width: 16px;
+    height: 15px;
+    background-color: #188CE8;
+    padding-right: 8.38px;
+    /* background-image: url(../images/sprite.svg#icon-Vector); */
+   
+} 
+.checkbox-label {
+    
+    /* padding-left: 120px; */
+}
+
+.checkbox-input:checked + .checkbox {
+    background-color: #212121;
+/* background-image: url(../images/sprite.svg#icon-icon-check); */
+
+}
 .link-dogovor{
     color: var(--accent-color);
 }
