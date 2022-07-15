@@ -62,7 +62,61 @@
                             <use href="./images/close.svg"></use> -->
                         <!-- </svg> -->
                     </button>
-                    
+                <form class="form js-form" name="main-form" autocomplete="on" novalidate>
+                    <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
+                    <div class="form-field">
+                        <label class="form-field-label" for="user-name">Имя</label>
+                        <div class="form-field-inner">
+                             <input class="form-field-input" id="user-name" type="text" name="user-name" autofocus placeholder="" />
+                             <svg class="form-field-icon" width="10" height="16">
+                                  <use href="./images/sprite.svg#icon-smartphone"></use>
+                             </svg>
+                        </div>
+                       
+                       
+                        
+                    </div>
+                
+                    <div class="form-field">
+                        <label class="form-field-label" for="user-tel">Телефон</label>
+                        <div class="form-field-inner">
+                            <input class="form-field-input" id="user-tel" type="tel" name="user-tel" placeholder="" />
+                            <svg class="form-field-icon" width="10" height="16">
+                                <use href="./images/sprite.svg#icon-smartphone"></use>
+                            </svg>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="form-field">
+                        <label class="form-field-label" for="user-email">Почта </label>
+                        <div class="form-field-inner">
+                            <input class="form-field-input" id="user-email" type="email" name="user-email" placeholder="" />
+                            <svg class="form-field-icon" width="10" height="16" aria-hidden="true">
+                                <use href="./images/sprite.svg#icon-smartphone"></use>
+                            </svg>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="form-field">
+                        <label class="form-field-label" for="user-comment">Комментарий </label>
+                        <textarea class="form-field-textarea" id="user-comment" name="user-comment"   placeholder="Введите текст"></textarea>
+                        
+                    </div>
+                    <div class="form-field-checkbox">
+                        <input type="checkbox" name="user-checkbox" value="Соглашаюсь с рассылкой и принимаю Условия договора" />
+                        <label for="user-checkbox">Соглашаюсь с рассылкой и принимаю <a href=""class="link-dogovor">Условия договора</a> </label>
+                    </div>
+                
+                    <div class="form-field">
+                        <button type="submit" class="button form-field-btn">Отправить</button>
+                    </div>
+                
+                </form>
+   
                 </div>
             </div>
         </section>
@@ -397,7 +451,20 @@
             </div>
             
         </div>
-
+        <form class="form js-form">
+            <p class="form-title">Подпишитесь на рассылку</p>
+              
+            <div class="form-field">
+                <label for="email">
+                    <input type="email" name="email" placeholder="" />
+                </label>
+            </div>
+        
+            <div class="form-field">
+                <button type="submit">Подписаться</button>
+            </div>
+        
+        </form>
     </footer>
     <script src="./JS/modal.js"></script>   
 </body>
