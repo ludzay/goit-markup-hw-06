@@ -916,7 +916,7 @@ fill: var(--color-white);
 }
 
 .form {
-    padding: 40px 41px 39px 40px;
+    padding: 40px 39px 40px 41px;
     font-weight: 400;
     font-size: 12px;  
     line-height: 1.17;
@@ -1033,10 +1033,10 @@ fill: var(--color-white);
     color: var(--accent-color);
 }
 
-.form-field-btn {
+/* .form-field-btn {
      margin:0;
   
-}
+} */
 
 .form-title-subscribe {
         color:var(--color-white);
