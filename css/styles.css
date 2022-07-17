@@ -623,14 +623,12 @@ background-image: url("../images/det.svg");
 /* button */
 .button {
     display: inline-block;
-    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     padding: 10px 32px;
     min-width: 200px;
     border: none;
-    /* height: 50px;
-    left: 700px;
-    top: 430px;  */
+    
 
     background-color: var(--accent-color);
     color: var(--color-white);
@@ -1004,24 +1002,29 @@ fill: var(--color-white);
     appearance: none;
 
 }
-
+.form-field-checkbox{
+    position: relative;
+}
 .checkbox {
     position: absolute;
     width: 16px;
     height: 15px;
+    /* top: 24px; */
     background-color: #188CE8;
     padding-right: 8.38px;
-    /* background-image: url(../images/sprite.svg#icon-Vector); */
+    /* background-image: url(../images/checkbox-off.svg); */
    
 } 
+
+
 .checkbox-label {
-    
+   position: relative;
     /* padding-left: 120px; */
 }
 
 .checkbox-input:checked + .checkbox {
     background-color: #212121;
-/* background-image: url(../images/sprite.svg#icon-icon-check); */
+    /* background-image: url(../images/checkbox-onn.svg); */
 
 }
 .link-dogovor{
