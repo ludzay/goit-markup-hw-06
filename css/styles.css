@@ -1003,28 +1003,30 @@ fill: var(--color-white);
 
 }
 .form-field-checkbox{
-    position: relative;
+    /* position: relative; */
 }
-.checkbox {
+.check-box {
     position: absolute;
     width: 16px;
     height: 15px;
+    top:3px;
+    left:13px;
     /* top: 24px; */
-    background-color: #188CE8;
-    padding-right: 8.38px;
-    /* background-image: url(../images/checkbox-off.svg); */
+    /* background-color: #188CE8; */
+    /* padding-left: 20px; */
+    background-image: url(../images/checkbox-off.svg);
    
 } 
 
 
 .checkbox-label {
-   position: relative;
-    /* padding-left: 120px; */
+   position: absolute;
+    padding-left: 35px;
 }
 
-.checkbox-input:checked + .checkbox {
-    background-color: #212121;
-    /* background-image: url(../images/checkbox-onn.svg); */
+.checkbox-input:checked + .check-box {
+    /* background-color: #212121; */
+    background-image: url(../images/checkbox-onn.svg);
 
 }
 .link-dogovor{
