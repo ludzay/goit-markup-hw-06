@@ -334,11 +334,13 @@ h1, h2, h3, h4, h5, h6, p{
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url("../images/close.svg"); 
+    fill:#188CE8;
   
     
 }
 
 .btn-modal-close:hover, .btn-modal-close:focus {
+    fill: var(--accent-color);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -622,7 +624,7 @@ background-image: url("../images/det.svg");
 
 /* button */
 .button {
-    display: inline-flex;
+    /* display: inline-flex; */
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     padding: 10px 32px;
