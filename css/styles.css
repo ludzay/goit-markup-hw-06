@@ -289,9 +289,7 @@ h1, h2, h3, h4, h5, h6, p{
     position: absolute;
     top:50%;
     left:50%;
-    /* transform:translate(-50%, -50%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
-    /* margin: 221px, 536px, 222px, 536px; */
+    
     width: 528px;
     max-height: 581px;
     height: 100%;
@@ -305,46 +303,27 @@ h1, h2, h3, h4, h5, h6, p{
 
 }
 
-/* .modal-close {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-} */
 
 .btn-modal-close {
     position: absolute;
-    top: 0;
-    right: 0;
-
-    display:flex;
+    display: flex;
     width: 30px;
     height: 30px;
-
-    
-    padding: 6px;
-    margin: 8px 8px;
-    
-    /* fill: black; */
-    content: '';
-    background-color: #FFFFFF;
-    /* justify-content: center;
-    align-items: center; */
+    top: 8px;
+    right: 8px;
+    padding: 8px;
+   
+    background-color: inherit;
+  
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
- 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url("../images/close.svg");
+    cursor: pointer;
    
-    
-  
-    
 }
 
-.btn-modal-close:hover {
+.btn-modal-close:hover, .btn-modal-close:focus {
     fill: var(--accent-color);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -460,12 +439,7 @@ background-image: url("../images/det.svg");
     align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
-    /* padding-top: 27px;
-    padding-right: auto;
-    padding-bottom: 27px;
-    padding-left: auto; */
-    
+       
     color: var(--color-white);
 
     background: rgba(47, 48, 58, 0.8)
@@ -701,7 +675,7 @@ footer {
    
 }
 .title-soc-foot,.form-title-subscribe {
-    /* margin-top: 0; */
+    
     font-weight: 700;
     margin-bottom: 20px;
     font-size: 14px;
@@ -715,12 +689,6 @@ footer {
 }
 .icon-footer {
     text-align: center;
-}
-
-.list-socnet {
-   
-    /* margin: 0;
-    padding: 0; */
 }
 
 .icon-socnet-fot {
@@ -876,17 +844,12 @@ fill: var(--color-white);
 }
 
 
-
-
-
 .link-portfolio img {
     display: block;
     max-width: 100%;
     height: auto;
 
 }
-
-
 
 .link-portfolio:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -906,8 +869,7 @@ fill: var(--color-white);
     line-height: 2;
     letter-spacing: 0.06em;
     text-align: left;
-/* 
-    background-color: tomato; */
+
 }
 .text-portfolio {
     /* margin-top: 0; */
@@ -920,6 +882,8 @@ fill: var(--color-white);
    
 }
 
+/* form */
+
 .form {
     padding: 40px 39px 40px 41px;
     font-weight: 400;
@@ -930,6 +894,7 @@ fill: var(--color-white);
     text-align: left;
     text-transform: none;
 } 
+
 .form-title {
     font-weight: 700;
     font-size: 20px;
@@ -955,21 +920,20 @@ fill: var(--color-white);
 }
 
 .form-field-input, .form-field-textarea {
+   
     width: 100%;
     height: 40px;
+    padding: 14px 14px 14px 41px;
  
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.01em;
     
-    padding: 14px 14px 14px 41px;
-
-    cursor: pointer;
-
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 
     outline: none;
+    cursor: pointer;
 }
 
 .form-field-textarea {
@@ -979,33 +943,23 @@ fill: var(--color-white);
     
 }
 
-.form-field-inner:focus, .form-field-inner:hover, .form-field-textarea:hover {
-    color: rgba(0, 0, 0, 1); 
-    border: 1px solid #2196F3;
-    fill: var(--accent-color);
-    
-    
-    
-}
-
-
-
 .form-field-icon {
-     position: absolute;
-     top: 50%;
-     left: 14px;
-     /* padding-left: 14px; */
-     transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 14px;
+ 
+    transform: translateY(-50%);
 
 }
 
-.form-field-icon:hover, .form-field-icon:focus {
-     fill: var(--accent-color);
-}
-
-/* .form-field-icon::placeholder {
+.form-field-inner:focus, .form-field-textarea:hover, .form-field-inner:hover, .form-field-textarea:focus 
+.form-field-icon:focus, form-field-icon:hover
+{   outline: none;
     fill: var(--accent-color);
-} */
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+     
+}
 
 .form-field-checkbox {
     padding-top: 20px;
@@ -1057,10 +1011,7 @@ fill: var(--color-white);
     text-align: center;
 }
 
-/* .form-field-btn {
-     margin:0;
-  
-} */
+/* Підписка - Subscribe */
 
 .form-title-subscribe {
         color:var(--color-white);
