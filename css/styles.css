@@ -951,13 +951,20 @@ fill: var(--color-white);
     transform: translateY(-50%);
 
 }
-
-.form-field-inner:focus, .form-field-textarea:hover, .form-field-inner:hover, .form-field-textarea:focus 
-.form-field-icon:focus, form-field-icon:hover
-{   outline: none;
-    fill: var(--accent-color);
+.form-field:focus-within .form-field-input, .form-field:hover .form-field-input,
+.form-field-textarea:hover, .form-field-textarea:focus
+{
     border: 1px solid var(--accent-color);
     border-radius: 4px;
+   
+}
+
+.form-field:focus-within .form-field-icon, .form-field:hover .form-field-icon
+
+{   
+    fill: var(--accent-color);
+    /* border: 1px solid var(--accent-color);
+    border-radius: 4px; */
      
 }
 
